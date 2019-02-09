@@ -33,3 +33,4 @@ tests:
     - -with-rtsopts=-N
     dependencies:
     - husk-prelude
+    - hspec
