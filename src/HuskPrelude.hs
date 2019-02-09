@@ -12,6 +12,12 @@ module HuskPrelude
   , Text
   , LText
   , cs
+
+    -- ** Arrow
+  , Control.Arrow.first
+  , Control.Arrow.second
+  , (Control.Arrow.***)
+  , (Control.Arrow.&&&)
   )
   where
 
@@ -21,6 +27,7 @@ import qualified Data.ByteString.Lazy
 import Data.Text (Text)
 import qualified Data.Text.Lazy
 import Data.String.Conversions (cs)
+import qualified Control.Arrow
 
 
 type LText =
