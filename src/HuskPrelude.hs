@@ -2,6 +2,10 @@ module HuskPrelude
   ( -- * Basic
     module Prelude
 
+    -- * Functions
+  , (<|)
+  , (|>)
+
     -- * Text
   , ByteString
   , LByteString
@@ -24,3 +28,9 @@ type LText =
 
 type LByteString =
   Data.ByteString.Lazy.ByteString
+
+infixr 0 <|
+infixl 0 |>
+
+(<|) = ($)
+(|>) = flip ($)
